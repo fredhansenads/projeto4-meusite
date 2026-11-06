@@ -1,10 +1,10 @@
 # Acompanhamento da construção do site
 
-**Ponto de retomada em 5 de novembro de 2026.** As aulas 1 a 12 foram concluídas. Foram construídas a página inicial, as quatro páginas de produtos e a página Empresa. O último commit local conferido é `352022c`, na branch `master`, com a mensagem “Atualização dos html”. Esta atualização do acompanhamento deverá ser incluída em um próximo commit.
+**Ponto de retomada em 6 de novembro de 2026.** As aulas 1 a 15 estão concluídas. O site tem nove páginas HTML: Início, Empresa, Produtos, Serviços, Contato e as quatro páginas individuais dos sistemas. A versão do site usada nesta revisão está no commit `383c4b0` da branch `main` (“Atualização das páginas do html”).
 
-**Próximo exercício — aula 13.** Criar a página Serviços, detalhando implantação, treinamento, suporte e customização. Acrescentar um link no resumo da página inicial e atualizar o item Serviços nos menus. Esse exercício continua a fase 4 do [plano de construção](PLANO-DO-SITE.md).
+**Próximo exercício — aula 16.** Iniciar a fase de CSS. Criar uma folha de estilos compartilhada, vinculá-la no `<head>` das nove páginas e conferir se uma primeira regra de tipografia aparece tanto na página inicial quanto nas páginas internas. Ver fase 5 do [plano de construção](PLANO-DO-SITE.md).
 
-**Conferência realizada.** Os códigos dos seis arquivos foram revisados pela leitura dos trechos enviados no chat. Foram conferidos o fechamento das tags, a hierarquia dos títulos, os destinos dos links e os avisos de desenvolvimento do CRM e do ERP. O assistente não executou o site. Os testes de navegação no navegador ficam a cargo do autor.
+**Conferência realizada.** O autor confirmou o teste da etapa de Contato no navegador. Após as correções nos menus, a revisão por leitura dos nove arquivos confirmou o fechamento das tags, um único `<h1>` por página e os cinco itens do menu na mesma ordem. Os links internos apontam para arquivos ou seções existentes. Nas quatro páginas de produto, “Voltar aos produtos” leva ao catálogo.
 
 ## Histórico das aulas
 
@@ -22,6 +22,9 @@
 | 10. Santus Relacionamento | Criada a página do CRM com aviso de desenvolvimento e funcionalidades previstas. Acrescentado o link no cartão. | [santus-relacionamento.html](santus-relacionamento.html). |
 | 11. Santus Gestão | Criada a página do ERP com aviso de desenvolvimento e recursos previstos para compras, estoque, contas, notas e relatórios. Acrescentado o link no cartão. | [santus-gestao.html](santus-gestao.html). |
 | 12. Empresa | Criada a página com história, público atendido e forma de trabalho. Acrescentado “Conheça nossa história” na página inicial. Atualizado o item Empresa nos menus das seis páginas. | [empresa.html](empresa.html). O menu dessa página usa `aria-current="page"` no item Empresa. |
+| 13. Serviços | Detalhados implantação, treinamento, suporte e customização. O item Serviços do menu e o link “Conheça nossos serviços” da página inicial abrem a página completa. | [servicos.html](servicos.html). |
+| 14. Contato | Criada a página de contato com informações sobre atendimento presencial e a distância. Os menus e os convites para falar com a equipe apontam para ela. | [contato.html](contato.html). Um comentário indica onde inserir o WhatsApp e o e-mail. |
+| 15. Produtos | Criado o catálogo dos quatro sistemas, com o aviso “Em desenvolvimento” no CRM e no ERP. Atualizados os menus, o link da página Empresa e os rodapés dos produtos. | [produtos.html](produtos.html). Na [página inicial](index.html), “Conheça os sistemas” leva aos cartões e o item Produtos do menu abre o catálogo. |
 
 ## Entregas concluídas e próximas entregas
 
@@ -31,9 +34,9 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 - [x] **Santus Escola.** Construída a página, ligada ao cartão da página inicial e revisada pelo código enviado.
 - [x] **Demais páginas de produtos.** Construídas e revisadas as páginas do Santus Caixa, Santus Relacionamento e Santus Gestão, com links de ida e retorno.
 - [x] **Empresa.** Construída e revisada a página, com o link do resumo e os menus atualizados.
-- [ ] **Serviços.** Criar a página interna, detalhar os quatro serviços e conectar o resumo da página inicial e os menus.
-- [ ] **Contato.** Criar a página interna e conectar os menus. Inserir os canais comerciais quando os dados forem definidos.
-- [ ] **Visão geral dos produtos.** Criar a página que apresenta e leva às quatro soluções. Atualizar o item Produtos nos menus para esse destino.
+- [x] **Serviços.** Página completa acessível pelos menus e pelo resumo da página inicial.
+- [x] **Página de contato.** Estrutura HTML pronta e ligada aos menus e aos links de atendimento.
+- [x] **Visão geral dos produtos.** Catálogo ligado às quatro páginas individuais, com caminho de volta em cada rodapé.
 - [ ] **CSS.** Criar e conectar uma folha de estilos compartilhada. Trabalhar cabeçalho, tipografia, cartões, links e rodapé. Conferir se o texto fica legível e os cartões cabem na largura de um celular.
 - [ ] **Interatividade e atendimento.** Concluir o menu móvel conforme o desenho escolhido. Inserir os canais comerciais definidos pela empresa. Conferir o número de destino do WhatsApp e o destinatário do e-mail.
 - [ ] **Revisão final.** Testar navegação por teclado, links e contato no celular e no computador. Revisar os títulos das abas, a situação dos produtos e as descrições das imagens que forem usadas.
@@ -43,7 +46,7 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 
 | Item | Situação e ação quando estiver disponível |
 | --- | --- |
-| WhatsApp e e-mail | Número e endereço a definir. A seção de contato já tem texto. Acrescentar os links quando os dados comerciais forem confirmados. |
+| WhatsApp e e-mail | Número e endereço a definir. Inserir e testar os links na página Contato assim que os dados comerciais forem confirmados. |
 | Instagram | Perfil a definir. Incluir apenas se for um canal público da empresa. |
 | Logotipo e imagens | A empresa ainda vai preparar esses materiais. Por enquanto, a identidade no cabeçalho usa o nome por extenso e os produtos são apresentados em texto. |
 | Depoimentos | Aguardar relatos reais e autorização para divulgar. Depois, inserir a seção planejada na página inicial. |
