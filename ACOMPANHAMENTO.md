@@ -1,8 +1,8 @@
 # Acompanhamento da construção do site
 
-**Ponto de retomada em 6 de novembro de 2026.** As aulas 1 a 15 estão concluídas. O site tem nove páginas HTML: Início, Empresa, Produtos, Serviços, Contato e as quatro páginas individuais dos sistemas. A versão do site usada nesta revisão está no commit `383c4b0` da branch `main` (“Atualização das páginas do html”).
+**Pausa em 10 de novembro de 2026, após a aula 18.** As nove páginas já usam a mesma folha de estilos para a tipografia, o cabeçalho, o menu e o espaçamento do conteúdo. O código está salvo no commit `4a13a50` da branch `main` (“Atualização css”).
 
-**Próximo exercício — aula 16.** Iniciar a fase de CSS. Criar uma folha de estilos compartilhada, vinculá-la no `<head>` das nove páginas e conferir se uma primeira regra de tipografia aparece tanto na página inicial quanto nas páginas internas. Ver fase 5 do [plano de construção](PLANO-DO-SITE.md).
+**Próximo exercício — aula 19.** Estilizar os cartões de Santus Escola, Santus Caixa, Santus Relacionamento e Santus Gestão. Ao retomar, consultar os quatro elementos `article` na seção `#produtos` da [página inicial](index.html) e no [catálogo](produtos.html). As regras das aulas anteriores estão na [folha de estilos compartilhada](css/estilos.css).
 
 **Conferência realizada.** O autor confirmou o teste da etapa de Contato no navegador. Após as correções nos menus, a revisão por leitura dos nove arquivos confirmou o fechamento das tags, um único `<h1>` por página e os cinco itens do menu na mesma ordem. Os links internos apontam para arquivos ou seções existentes. Nas quatro páginas de produto, “Voltar aos produtos” leva ao catálogo.
 
@@ -25,6 +25,9 @@
 | 13. Serviços | Detalhados implantação, treinamento, suporte e customização. O item Serviços do menu e o link “Conheça nossos serviços” da página inicial abrem a página completa. | [servicos.html](servicos.html). |
 | 14. Contato | Criada a página de contato com informações sobre atendimento presencial e a distância. Os menus e os convites para falar com a equipe apontam para ela. | [contato.html](contato.html). Um comentário indica onde inserir o WhatsApp e o e-mail. |
 | 15. Produtos | Criado o catálogo dos quatro sistemas, com o aviso “Em desenvolvimento” no CRM e no ERP. Atualizados os menus, o link da página Empresa e os rodapés dos produtos. | [produtos.html](produtos.html). Na [página inicial](index.html), “Conheça os sistemas” leva aos cartões e o item Produtos do menu abre o catálogo. |
+| 16. Folha de estilos | Vinculado o mesmo CSS no `head` dos nove arquivos HTML. Definidas a fonte e a altura de linha do texto e a cor azul-escura dos títulos principais. | [estilos.css](css/estilos.css), regras `body` e `h1`. |
+| 17. Cabeçalho e menu | Usado Flexbox para alinhar o nome da empresa e os links e permitir a quebra de linha. Definidos o sublinhado da página atual e o contorno de foco para navegação por teclado. | Regras de `header`, `header nav ul`, `[aria-current='page']` e `:focus-visible` na folha de estilos. |
+| 18. Largura e espaçamento | Centralizado o conteúdo principal com largura máxima de `70rem`. Parágrafos limitados a `68ch` e margem de `2.5rem` entre seções consecutivas. | Regras `main`, `main p` e `main section + section`. Estrutura conferida em [Empresa](empresa.html) e [Serviços](servicos.html). |
 
 ## Entregas concluídas e próximas entregas
 
@@ -37,7 +40,9 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 - [x] **Serviços.** Página completa acessível pelos menus e pelo resumo da página inicial.
 - [x] **Página de contato.** Estrutura HTML pronta e ligada aos menus e aos links de atendimento.
 - [x] **Visão geral dos produtos.** Catálogo ligado às quatro páginas individuais, com caminho de volta em cada rodapé.
-- [ ] **CSS.** Criar e conectar uma folha de estilos compartilhada. Trabalhar cabeçalho, tipografia, cartões, links e rodapé. Conferir se o texto fica legível e os cartões cabem na largura de um celular.
+- [x] **CSS compartilhado e tipografia.** Vínculos conferidos nas nove páginas. Regras de cabeçalho, menu e conteúdo revisadas pela leitura do código nas aulas 16 a 18.
+- [ ] **Cartões dos produtos.** Definir apresentação, espaçamento e distribuição dos quatro cartões. Conferir a leitura em tela estreita.
+- [ ] **Demais estilos.** Completar os estilos dos links de conteúdo e do rodapé e conferir o conjunto no celular e no computador.
 - [ ] **Interatividade e atendimento.** Concluir o menu móvel conforme o desenho escolhido. Inserir os canais comerciais definidos pela empresa. Conferir o número de destino do WhatsApp e o destinatário do e-mail.
 - [ ] **Revisão final.** Testar navegação por teclado, links e contato no celular e no computador. Revisar os títulos das abas, a situação dos produtos e as descrições das imagens que forem usadas.
 - [ ] **Publicação.** Conferir domínio e pasta de publicação na Locaweb, preservar eventual conteúdo existente e enviar os arquivos. Abrir o domínio por HTTPS e repetir os testes de navegação e contato no site publicado.
