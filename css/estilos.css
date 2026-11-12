@@ -71,3 +71,86 @@ main p {
 main section + section {
   margin-block-start: 2.5rem;
 }
+.grade-produtos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grade-produtos > article {
+  padding: 1.25rem;
+  border: 1px solid #c6d3e1;
+  border-radius: 0.5rem;
+  background-color: #f6f9fc;
+}
+
+.grade-produtos h2,
+.grade-produtos h3 {
+  margin-top: 0;
+  color: #17365d;
+}
+
+@media (min-width: 48rem) {
+  .grade-produtos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+main a {
+  color: #17365d;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+main a:hover {
+  text-decoration-thickness: 2px;
+}
+
+main a:focus-visible {
+  outline: 2px solid #17365d;
+  outline-offset: 3px;
+}
+
+.botao-principal {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  border-radius: 0.5rem;
+  background-color: #17365d;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.botao-principal:hover {
+  background-color: #244c78;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding: 1.25rem 1rem;
+  background-color: #17365d;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+footer a:hover {
+  text-decoration-thickness: 2px;
+}
+
+footer a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}

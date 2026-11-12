@@ -1,8 +1,8 @@
 # Acompanhamento da construção do site
 
-**Pausa em 10 de novembro de 2026, após a aula 18.** As nove páginas já usam a mesma folha de estilos para a tipografia, o cabeçalho, o menu e o espaçamento do conteúdo. O código está salvo no commit `4a13a50` da branch `main` (“Atualização css”).
+**Ponto de retomada em 11 de novembro de 2026, após a aula 21.** A página inicial e o catálogo apresentam os quatro produtos em cartões. As nove páginas usam os estilos compartilhados para os links de conteúdo e o rodapé. O último commit conferido na branch `main` foi `d5951ae`. No momento deste registro, as alterações das aulas 19 a 21 em `index.html`, `produtos.html` e `css/estilos.css` aguardam commit.
 
-**Próximo exercício — aula 19.** Estilizar os cartões de Santus Escola, Santus Caixa, Santus Relacionamento e Santus Gestão. Ao retomar, consultar os quatro elementos `article` na seção `#produtos` da [página inicial](index.html) e no [catálogo](produtos.html). As regras das aulas anteriores estão na [folha de estilos compartilhada](css/estilos.css).
+**Próximo exercício sugerido para a aula 22.** Conferir a página inicial e o catálogo em uma janela estreita e outra larga. Observar a quebra de linha do menu e a passagem da grade de uma para duas colunas a partir de `48rem`. Usar Tab e Enter para percorrer o botão “Conheça os sistemas”, os links dos cartões e o rodapé.
 
 **Conferência realizada.** O autor confirmou o teste da etapa de Contato no navegador. Após as correções nos menus, a revisão por leitura dos nove arquivos confirmou o fechamento das tags, um único `<h1>` por página e os cinco itens do menu na mesma ordem. Os links internos apontam para arquivos ou seções existentes. Nas quatro páginas de produto, “Voltar aos produtos” leva ao catálogo.
 
@@ -28,6 +28,9 @@
 | 16. Folha de estilos | Vinculado o mesmo CSS no `head` dos nove arquivos HTML. Definidas a fonte e a altura de linha do texto e a cor azul-escura dos títulos principais. | [estilos.css](css/estilos.css), regras `body` e `h1`. |
 | 17. Cabeçalho e menu | Usado Flexbox para alinhar o nome da empresa e os links e permitir a quebra de linha. Definidos o sublinhado da página atual e o contorno de foco para navegação por teclado. | Regras de `header`, `header nav ul`, `[aria-current='page']` e `:focus-visible` na folha de estilos. |
 | 18. Largura e espaçamento | Centralizado o conteúdo principal com largura máxima de `70rem`. Parágrafos limitados a `68ch` e margem de `2.5rem` entre seções consecutivas. | Regras `main`, `main p` e `main section + section`. Estrutura conferida em [Empresa](empresa.html) e [Serviços](servicos.html). |
+| 19. Cartões dos produtos | Agrupados os quatro artigos dentro de `.grade-produtos` na página inicial e no catálogo. Corrigida a abertura do artigo Santus Escola na página inicial. A grade usa uma coluna em telas estreitas e duas a partir de `48rem`. | [Página inicial](index.html), [catálogo](produtos.html) e [folha de estilos](css/estilos.css). |
+| 20. Links e botão principal | Estilizados os links do conteúdo, com sublinhado ao passar o ponteiro e contorno de foco pelo teclado. “Conheça os sistemas” recebeu a classe `botao-principal` e leva à seção `#produtos`. | Link na apresentação da página inicial e regras `main a` e `.botao-principal` no CSS. |
+| 21. Rodapé e retorno ao início | Estilizados os nove rodapés. Na página inicial, o autor moveu o `id="inicio"` da primeira seção para o cabeçalho e confirmou no navegador que “Voltar ao início” agora leva ao nome Santus Tech e ao menu. | Regras `footer` no CSS e ligação entre `href="#inicio"` e `<header id="inicio">` na [página inicial](index.html). |
 
 ## Entregas concluídas e próximas entregas
 
@@ -41,8 +44,9 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 - [x] **Página de contato.** Estrutura HTML pronta e ligada aos menus e aos links de atendimento.
 - [x] **Visão geral dos produtos.** Catálogo ligado às quatro páginas individuais, com caminho de volta em cada rodapé.
 - [x] **CSS compartilhado e tipografia.** Vínculos conferidos nas nove páginas. Regras de cabeçalho, menu e conteúdo revisadas pela leitura do código nas aulas 16 a 18.
-- [ ] **Cartões dos produtos.** Definir apresentação, espaçamento e distribuição dos quatro cartões. Conferir a leitura em tela estreita.
-- [ ] **Demais estilos.** Completar os estilos dos links de conteúdo e do rodapé e conferir o conjunto no celular e no computador.
+- [x] **Cartões dos produtos.** Grade e estrutura dos quatro artigos conferidas na página inicial e no catálogo.
+- [x] **Links e rodapés.** Estilos revisados no CSS e destinos dos rodapés conferidos nas nove páginas. Retorno ao cabeçalho testado pelo autor.
+- [ ] **Conferência visual e por teclado.** Verificar a leitura dos cartões, a disposição do menu e o foco dos links em telas de larguras diferentes.
 - [ ] **Interatividade e atendimento.** Concluir o menu móvel conforme o desenho escolhido. Inserir os canais comerciais definidos pela empresa. Conferir o número de destino do WhatsApp e o destinatário do e-mail.
 - [ ] **Revisão final.** Testar navegação por teclado, links e contato no celular e no computador. Revisar os títulos das abas, a situação dos produtos e as descrições das imagens que forem usadas.
 - [ ] **Publicação.** Conferir domínio e pasta de publicação na Locaweb, preservar eventual conteúdo existente e enviar os arquivos. Abrir o domínio por HTTPS e repetir os testes de navegação e contato no site publicado.
