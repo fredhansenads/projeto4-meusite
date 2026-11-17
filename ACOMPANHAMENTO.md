@@ -1,8 +1,8 @@
 # Acompanhamento da construção do site
 
-**Ponto de retomada em 11 de novembro de 2026, após a aula 21.** A página inicial e o catálogo apresentam os quatro produtos em cartões. As nove páginas usam os estilos compartilhados para os links de conteúdo e o rodapé. O último commit conferido na branch `main` foi `d5951ae`. No momento deste registro, as alterações das aulas 19 a 21 em `index.html`, `produtos.html` e `css/estilos.css` aguardam commit.
+**Ponto de retomada em 17 de novembro de 2026, após a aula 23.** O autor confirmou o funcionamento do layout em janelas largas e estreitas, da navegação por teclado e dos links de WhatsApp e e-mail. O último commit conferido na branch `main` foi `590a698` (“Atualização das páginas com butões”). Neste registro, a alteração de `contato.html` e esta atualização do acompanhamento aguardam commit.
 
-**Próximo exercício sugerido para a aula 22.** Conferir a página inicial e o catálogo em uma janela estreita e outra larga. Observar a quebra de linha do menu e a passagem da grade de uma para duas colunas a partir de `48rem`. Usar Tab e Enter para percorrer o botão “Conheça os sistemas”, os links dos cartões e o rodapé.
+**Próximo exercício sugerido para a aula 24.** Iniciar a interatividade prevista no plano, criando um botão para abrir e fechar o menu em telas pequenas. Introduzir JavaScript, o estado aberto ou fechado e o atributo `aria-expanded`, com teste por mouse e teclado. O menu atual já permite a quebra de linha e foi testado pelo autor na aula 22.
 
 **Conferência realizada.** O autor confirmou o teste da etapa de Contato no navegador. Após as correções nos menus, a revisão por leitura dos nove arquivos confirmou o fechamento das tags, um único `<h1>` por página e os cinco itens do menu na mesma ordem. Os links internos apontam para arquivos ou seções existentes. Nas quatro páginas de produto, “Voltar aos produtos” leva ao catálogo.
 
@@ -31,6 +31,8 @@
 | 19. Cartões dos produtos | Agrupados os quatro artigos dentro de `.grade-produtos` na página inicial e no catálogo. Corrigida a abertura do artigo Santus Escola na página inicial. A grade usa uma coluna em telas estreitas e duas a partir de `48rem`. | [Página inicial](index.html), [catálogo](produtos.html) e [folha de estilos](css/estilos.css). |
 | 20. Links e botão principal | Estilizados os links do conteúdo, com sublinhado ao passar o ponteiro e contorno de foco pelo teclado. “Conheça os sistemas” recebeu a classe `botao-principal` e leva à seção `#produtos`. | Link na apresentação da página inicial e regras `main a` e `.botao-principal` no CSS. |
 | 21. Rodapé e retorno ao início | Estilizados os nove rodapés. Na página inicial, o autor moveu o `id="inicio"` da primeira seção para o cabeçalho e confirmou no navegador que “Voltar ao início” agora leva ao nome Santus Tech e ao menu. | Regras `footer` no CSS e ligação entre `href="#inicio"` e `<header id="inicio">` na [página inicial](index.html). |
+| 22. Conferência visual e por teclado | O autor confirmou duas colunas na janela larga, uma coluna na estreita e navegação com contorno de foco visível pelo teclado. | Percursos da página inicial e do catálogo usando Tab e Enter, conforme o exercício da aula 22. |
+| 23. Canais de atendimento | Inserida a seção “Fale com nossa equipe”, com botão de WhatsApp, número visível e link de e-mail. A digitação foi revisada por leitura e o autor confirmou o funcionamento dos testes no navegador. | [contato.html](contato.html). WhatsApp `https://wa.me/5586999397804` e e-mail `mailto:fredhansenfisico@gmail.com`. |
 
 ## Entregas concluídas e próximas entregas
 
@@ -46,8 +48,9 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 - [x] **CSS compartilhado e tipografia.** Vínculos conferidos nas nove páginas. Regras de cabeçalho, menu e conteúdo revisadas pela leitura do código nas aulas 16 a 18.
 - [x] **Cartões dos produtos.** Grade e estrutura dos quatro artigos conferidas na página inicial e no catálogo.
 - [x] **Links e rodapés.** Estilos revisados no CSS e destinos dos rodapés conferidos nas nove páginas. Retorno ao cabeçalho testado pelo autor.
-- [ ] **Conferência visual e por teclado.** Verificar a leitura dos cartões, a disposição do menu e o foco dos links em telas de larguras diferentes.
-- [ ] **Interatividade e atendimento.** Concluir o menu móvel conforme o desenho escolhido. Inserir os canais comerciais definidos pela empresa. Conferir o número de destino do WhatsApp e o destinatário do e-mail.
+- [x] **Conferência visual e por teclado.** Testes da aula 22 confirmados pelo autor em janelas largas e estreitas.
+- [x] **Canais de atendimento.** WhatsApp e e-mail inseridos na página Contato, revisados por leitura e testados pelo autor com os destinos corretos.
+- [ ] **Interatividade do menu.** Construir e testar o controle de abertura e fechamento do menu em telas pequenas.
 - [ ] **Revisão final.** Testar navegação por teclado, links e contato no celular e no computador. Revisar os títulos das abas, a situação dos produtos e as descrições das imagens que forem usadas.
 - [ ] **Publicação.** Conferir domínio e pasta de publicação na Locaweb, preservar eventual conteúdo existente e enviar os arquivos. Abrir o domínio por HTTPS e repetir os testes de navegação e contato no site publicado.
 
@@ -55,7 +58,7 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 
 | Item | Situação e ação quando estiver disponível |
 | --- | --- |
-| WhatsApp e e-mail | Número e endereço a definir. Inserir e testar os links na página Contato assim que os dados comerciais forem confirmados. |
+| WhatsApp e e-mail | Definidos e publicados no código da página Contato. WhatsApp comercial (86) 99939-7804 e e-mail fredhansenfisico@gmail.com. O autor confirmou os testes dos dois links. |
 | Instagram | Perfil a definir. Incluir apenas se for um canal público da empresa. |
 | Logotipo e imagens | A empresa ainda vai preparar esses materiais. Por enquanto, a identidade no cabeçalho usa o nome por extenso e os produtos são apresentados em texto. |
 | Depoimentos | Aguardar relatos reais e autorização para divulgar. Depois, inserir a seção planejada na página inicial. |
