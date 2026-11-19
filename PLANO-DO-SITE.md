@@ -1,19 +1,19 @@
-# Plano de construção do site da Santus Tech
+# Plano de construção do site da HANSEN
 
-O site deve ajudar o visitante a reconhecer uma solução para sua rotina, entender o que ela faz e conversar com a Santus Tech. Dois percursos orientarão a construção e a revisão do site. Um diretor de escola deve conseguir descobrir como funciona a emissão de boletins. Um comerciante deve conseguir verificar se o caixa aceita Pix e entrar em contato.
+O site deve ajudar o visitante a reconhecer uma solução para sua rotina, entender o que ela faz e conversar com a HANSEN. Dois percursos orientarão a construção e a revisão do site. Um diretor de escola deve conseguir descobrir como funciona a emissão de boletins. Um comerciante deve conseguir verificar se o caixa aceita Pix e entrar em contato.
 
 ## Público e conteúdo
 
-A Santus Tech nasceu em 2026, em Teresina (PI), fundada por um professor de Física da rede pública. O primeiro produto surgiu do trabalho com notas e boletins em uma escola. A procura de comerciantes por controle de vendas e estoque deu origem ao Santus Caixa.
+A HANSEN nasceu em 2026, em Teresina (PI), fundada por um professor de Física da rede pública. O primeiro produto surgiu do trabalho com notas e boletins em uma escola. A procura de comerciantes por controle de vendas e estoque deu origem ao HANSEN Caixa.
 
 O site se dirige a escolas, cursos livres, comércios e pequenas e médias empresas. A implantação presencial atende Piauí e Maranhão. Suporte, treinamento e ajustes também podem acontecer a distância.
 
 | Produto | O que o visitante precisa encontrar |
 | --- | --- |
-| Santus Escola | Matrículas, documentos, frequência, notas e boletins. Explicar o que a secretaria, os professores e as famílias podem fazer. |
-| Santus Caixa | Venda no balcão, recebimento em dinheiro, cartão ou Pix, comprovante, abertura e fechamento de caixa e baixa no estoque. |
-| Santus Relacionamento | CRM **em desenvolvimento**. Apresentar os recursos previstos para histórico de contatos, acompanhamento de negociações e lembretes de retorno. |
-| Santus Gestão | ERP **em desenvolvimento**. Apresentar os recursos previstos para compras, estoque, contas a pagar e a receber, notas e relatórios. |
+| HANSEN Escola | Matrículas, documentos, frequência, notas e boletins. Explicar o que a secretaria, os professores e as famílias podem fazer. |
+| HANSEN Caixa | Venda no balcão, recebimento em dinheiro, cartão ou Pix, comprovante, abertura e fechamento de caixa e baixa no estoque. |
+| HANSEN Relacionamento | CRM **em desenvolvimento**. Apresentar os recursos previstos para histórico de contatos, acompanhamento de negociações e lembretes de retorno. |
+| HANSEN Gestão | ERP **em desenvolvimento**. Apresentar os recursos previstos para compras, estoque, contas a pagar e a receber, notas e relatórios. |
 
 ## Mapa do site
 
@@ -26,7 +26,19 @@ O site se dirige a escolas, cursos livres, comércios e pequenas e médias empre
 | Serviços | Implantação e migração de dados, treinamento, suporte técnico e customização. Indicar como e onde a equipe atende. |
 | Contato | WhatsApp comercial como ação principal e e-mail como alternativa. Incluir Instagram se a empresa decidir divulgá-lo. |
 
-No cabeçalho, usar o nome Santus Tech por extenso. Os cartões podem ser apresentados com texto enquanto a empresa prepara imagens. A seção de depoimentos entrará na página inicial quando houver relatos reais com autorização para publicação.
+No cabeçalho, usar o nome HANSEN por extenso. Os cartões podem ser apresentados com texto enquanto a empresa prepara imagens. A seção de depoimentos entrará na página inicial quando houver relatos reais com autorização para publicação.
+
+## Paleta de cores
+
+Em 19 de novembro de 2026, o autor definiu laranja, preto e branco para os estilos atuais e as próximas etapas. O CSS centraliza as cores em três variáveis no seletor `:root`.
+
+| Cor | Valor | Aplicação |
+| --- | --- | --- |
+| Laranja | `#ff7a00` | Fundo dos botões, bordas dos cartões e destaques de navegação. |
+| Preto | `#000` | Textos e títulos sobre branco, texto dos botões laranja e fundo do rodapé. |
+| Branco | `#fff` | Fundo da página e dos cartões e texto sobre fundos pretos. |
+
+Os botões recebem fundo preto e texto branco ao passar o ponteiro. Os novos estilos devem usar `var(--cor-laranja)`, `var(--cor-preta)` e `var(--cor-branca)` para seguir a paleta.
 
 ## Fases do plano aprovado
 
