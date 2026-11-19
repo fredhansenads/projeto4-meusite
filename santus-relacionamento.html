@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Santus Relacionamento | Santus Tech</title>
+    <meta
+      name="description"
+      content="Conheça a proposta do Santus Relacionamento, CRM em desenvolvimento para organizar contatos, acompanhar negociações e lembrar retornos aos clientes."
+    />
     <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <header>
       <p><a href="index.html">Santus Tech</a></p>
+      <button
+        class="botao-menu"
+        type="button"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+      >
+        Abrir menu
+      </button>
 
-      <nav aria-label="Menu principal">
+      <nav id="menu-principal" aria-label="Menu principal">
         <ul>
           <li><a href="index.html#inicio">Início</a></li>
           <li><a href="empresa.html">Empresa</a></li>

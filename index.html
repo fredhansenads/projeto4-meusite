@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Santus Tech | Sistemas para escolas e empresas</title>
+    <meta
+      name="description"
+      content="Conheça a Santus Tech, de Teresina. Sistemas para escolas e empresas, com implantação, treinamento, suporte e customização."
+    />
     <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <header id="inicio">
       <p>Santus Tech</p>
-      <nav aria-label="Menu principal">
+      <button
+        class="botao-menu"
+        type="button"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+      >
+        Abrir menu
+      </button>
+      <nav id="menu-principal" aria-label="Menu principal">
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="empresa.html">Empresa</a></li>

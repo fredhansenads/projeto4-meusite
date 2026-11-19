@@ -1,8 +1,14 @@
 # Acompanhamento da construção do site
 
-**Ponto de retomada em 17 de novembro de 2026, após a aula 23.** O autor confirmou o funcionamento do layout em janelas largas e estreitas, da navegação por teclado e dos links de WhatsApp e e-mail. O último commit conferido na branch `main` foi `590a698` (“Atualização das páginas com butões”). Neste registro, a alteração de `contato.html` e esta atualização do acompanhamento aguardam commit.
+**Ponto de retomada em 19 de novembro de 2026, após a aula 25.** O menu móvel foi implementado nas nove páginas e testado pelo autor. Cada página recebeu uma descrição própria no `head`. O último commit conferido na branch `main` foi `1ee5745` (“Atualização da página contato”). As alterações atuais nos nove arquivos HTML, no CSS, na pasta `js` e neste acompanhamento aguardam commit.
 
-**Próximo exercício sugerido para a aula 24.** Iniciar a interatividade prevista no plano, criando um botão para abrir e fechar o menu em telas pequenas. Introduzir JavaScript, o estado aberto ou fechado e o atributo `aria-expanded`, com teste por mouse e teclado. O menu atual já permite a quebra de linha e foi testado pelo autor na aula 22.
+**Próximo ponto de retomada — aula 26.** Apresentar o próximo exercício no chat, com código, explicações e indicação do local de cada alteração. O autor fará a digitação e os testes. A revisão final e a preparação para publicação continuam pendentes no plano.
+
+## Dinâmica de aprendizagem a partir da aula 26
+
+O assistente apresenta o código no chat, explica cada parte e indica onde inseri-lo. O autor digita no VS Code, testa no navegador e solicita a revisão ao concluir cada etapa. As revisões do assistente são feitas pela leitura dos arquivos. Edições diretas e execução do site pelo assistente dependem de solicitação expressa do autor, incluindo pedidos específicos de atualização deste documento.
+
+Na aula 25, o assistente inseriu as descrições com autorização do autor. O autor considerou essa etapa concluída e escolheu retomar a digitação manual para favorecer o estudo e a aprendizagem.
 
 **Conferência realizada.** O autor confirmou o teste da etapa de Contato no navegador. Após as correções nos menus, a revisão por leitura dos nove arquivos confirmou o fechamento das tags, um único `<h1>` por página e os cinco itens do menu na mesma ordem. Os links internos apontam para arquivos ou seções existentes. Nas quatro páginas de produto, “Voltar aos produtos” leva ao catálogo.
 
@@ -33,6 +39,8 @@
 | 21. Rodapé e retorno ao início | Estilizados os nove rodapés. Na página inicial, o autor moveu o `id="inicio"` da primeira seção para o cabeçalho e confirmou no navegador que “Voltar ao início” agora leva ao nome Santus Tech e ao menu. | Regras `footer` no CSS e ligação entre `href="#inicio"` e `<header id="inicio">` na [página inicial](index.html). |
 | 22. Conferência visual e por teclado | O autor confirmou duas colunas na janela larga, uma coluna na estreita e navegação com contorno de foco visível pelo teclado. | Percursos da página inicial e do catálogo usando Tab e Enter, conforme o exercício da aula 22. |
 | 23. Canais de atendimento | Inserida a seção “Fale com nossa equipe”, com botão de WhatsApp, número visível e link de e-mail. A digitação foi revisada por leitura e o autor confirmou o funcionamento dos testes no navegador. | [contato.html](contato.html). WhatsApp `https://wa.me/5586999397804` e e-mail `mailto:fredhansenfisico@gmail.com`. |
+| 24. Menu móvel com JavaScript | Inseridos botão de abrir e fechar, vínculo com o script usando `defer` e identificação do menu nas nove páginas. O script atualiza `aria-expanded` e o texto do botão. Esc fecha o menu móvel quando o foco está em seus links e devolve o foco ao botão. Código revisado por leitura e testes confirmados pelo autor. | [menu.js](js/menu.js), regras de `.botao-menu` e `.menu-pronto` no [CSS](css/estilos.css) e cabeçalhos das nove páginas. |
+| 25. Descrições das páginas | O assistente acrescentou uma `meta description` própria em cada página, após o título e antes do CSS. Foram conferidas nove ocorrências em nove arquivos e a formatação das alterações. O autor considerou a etapa concluída. | Elemento `meta` com `name="description"` no `head` de cada HTML. |
 
 ## Entregas concluídas e próximas entregas
 
@@ -50,7 +58,8 @@ As marcações concluídas abaixo registram a construção e a revisão do códi
 - [x] **Links e rodapés.** Estilos revisados no CSS e destinos dos rodapés conferidos nas nove páginas. Retorno ao cabeçalho testado pelo autor.
 - [x] **Conferência visual e por teclado.** Testes da aula 22 confirmados pelo autor em janelas largas e estreitas.
 - [x] **Canais de atendimento.** WhatsApp e e-mail inseridos na página Contato, revisados por leitura e testados pelo autor com os destinos corretos.
-- [ ] **Interatividade do menu.** Construir e testar o controle de abertura e fechamento do menu em telas pequenas.
+- [x] **Interatividade do menu.** Controle de abertura e fechamento aplicado às nove páginas, revisado por leitura e testado pelo autor.
+- [x] **Descrições das páginas.** Uma descrição própria inserida e conferida no `head` de cada um dos nove arquivos HTML.
 - [ ] **Revisão final.** Testar navegação por teclado, links e contato no celular e no computador. Revisar os títulos das abas, a situação dos produtos e as descrições das imagens que forem usadas.
 - [ ] **Publicação.** Conferir domínio e pasta de publicação na Locaweb, preservar eventual conteúdo existente e enviar os arquivos. Abrir o domínio por HTTPS e repetir os testes de navegação e contato no site publicado.
 
